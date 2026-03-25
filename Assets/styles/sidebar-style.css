@@ -1,23 +1,64 @@
-@keyframes expand-sidebar {
-	from {
-		width: 3.5%;
-	}
-	to {
-		width: 15%;
-	}
+#sidebarContainer {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
 }
 
 #sidebar {
 	padding: 0px;
 	margin: 0px;
-	height: 100%;
 	border-right: solid 1px black;
 	background-color: #efefff;
 	
-	width: 3.5%;
-	transition: width 2s;
+	width: 15vw;
+	height: 100%;
+	
+	transform: translateX(-11.5vw);
+	
+	transition: transform 1.5s;
+	backface-visibility: hidden;
+	
+	display: flex;
+	flex-direction: column;
 }
 
 #sidebar:hover {
-	width: 15%;
+	transform: translateX(0);
+}
+
+#sidebar span {
+	padding: 3px 3px 3px 15px;
+	font-size: 18px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out 0s;
+}
+
+#sidebar:hover span {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out 1s;
+}
+
+#icon {
+	width: 64px;
+	height: 64px;
+	
+	position: fixed;
+	z-index: 3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+
+#sidebar-links {
+	margin-top: 74px; /*64 from icon + 10 default*/
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sublink {
+	padding-left: 30px !important;
 }

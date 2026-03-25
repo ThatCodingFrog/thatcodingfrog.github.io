@@ -6,4 +6,19 @@ body {
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
+	overflow: hidden;
+}
+
+#mainContent {
+	position: fixed;
+	left: 3.5%;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
 }
