@@ -15,8 +15,12 @@ body {
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	background-color: #eee;
+	background-color: #baffdc6b;
 	z-index: 1;
+}
+
+#mainContentInner {
+	margin: 20px;
 }
 
 a {
