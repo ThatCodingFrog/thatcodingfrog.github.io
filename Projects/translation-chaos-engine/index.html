@@ -4,44 +4,133 @@
 
 <html>
 
-<head>
-	<title>ThatCodingFrog's Homepage</title>
-	<link rel="shortcut icon" href="./Assets/images/ThatCodingFrog.png"/>
-	<link rel="stylesheet" href="./Assets/styles/main-style.css"/>
-	<link rel="stylesheet" href="./Assets/styles/sidebar-style.css"/>
-</head>
+	<head>
+		<title>ThatCodingFrog's Homepage</title>
+		<link rel="shortcut icon" href="/Assets/images/ThatCodingFrog.png" />
+		<link rel="stylesheet" href="/Assets/styles/main-style.css" />
+		<link rel="stylesheet" href="/Assets/styles/sidebar-style.css" />
 
-<body>
 
-<div id="sidebarContainer">
+		<style>
+			#buttonContainer {
+				display: flex;
+				gap: 20px;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 20px 0;
+			}
 
-<div id="icon">
-	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-		<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-	</svg>
-</div>
+			button {
+				background-color: #00a0a0;
+				font-size: 22px;
+				border: none;
+				border-radius: 50px;
+				padding: 15px 20px;
+				width: 100%;
+				max-width: 400px;
+			}
+		</style>
+	</head>
 
-<div id="sidebar">	
-	<div id="sidebar-links">
-		<span><a href="./">Homepage</a></span>
-		<span><a href="./Projects/">Projects</a></span>
-		<span class="sublink"><a href="./Projects/translation-chaos-engine">Translation Chaos Engine</a></span>
-		<span><a href="./About/">About</a></span>
-	</div>
-</div>
-</div>
+	<body>
 
-<div id="mainContent">
-	<div id="mainContentInner">
-		<h1>Translation Chaos Engine</h1>
+		<div id="sidebarContainer">
 
-        <h6>Release Date: April 11, 2026</h6>
+			<div id="icon">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+			</div>
 
-        <p>The Translation Chaos Engine is a new program by ThatCodingFrog.  It takes a user's input text, runs it through a translation program many times, then outputs the final funny result.  For additional chaos, add settings such as "Copy Lines while Translating" and "Add Random Phrases to Translation".
-        </p>
-	</div>
-</div>
+			<div id="sidebar">
+				<div id="sidebar-links">
+					<span><a href="/">Homepage</a></span>
+					<span><a href="/Projects/">Projects</a></span>
+					<span class="sublink"><a href="/Projects/translation-chaos-engine">Translation Chaos
+							Engine</a></span>
+					<span><a href="/About/">About</a></span>
+				</div>
+			</div>
+		</div>
 
-</body>
+		<div id="mainContent">
+			<div id="mainContentInner">
+				<div id="header">
+					<div id="header-column-left">
+						<h1>Translation Chaos Engine</h1>
+
+						<h3>In collaboration with <a href="https://www.github.com/ultimatecatperson">Random Meow</a>
+						</h3>
+						<h4><i>A program that creates hilarious translation errors through chaotic processing</i></h4>
+						<h6>Release Date: April 15, 2026</h6>
+					</div>
+
+					<div id="header-column-right">
+						<img src="/Assets/images/X_Translation_logo.png" alt="Translation Chaos Engine Logo" />
+					</div>
+				</div>
+
+
+				<p>The Translation Chaos Engine is a new program written in HTML and Google Apps Script by
+					ThatCodingFrog and Random Meow. It takes a user's input text, runs it through a translation program
+					many times, then outputs the final funny result. For additional chaos, add settings such as "Copy
+					Lines while Translating" and "Add Random Phrases to Translation".
+				</p>
+
+				<h4>Features:</h4>
+				<ul>
+					<li>Customizable number of translations (up to 200 iterations)</li>
+					<li>Option to copy lines while translating, creating a longer and more chaotic output</li>
+					<li>Option to add random phrases to the translation process, increasing the likelihood of hilarious
+						errors</li>
+					<li>Easy history and copy functionality to share your outputs with your friends easily</li>
+					<li>Simple user interface for easy input and settings adjustment</li>
+					<li>Page translations for five different languages</li>
+				</ul>
+
+				<div id="buttonContainer">
+					<button
+						onclick="window.open('https://script.google.com/macros/s/AKfycbxOWMXERDOEoM3SilqO_FtSZ6VtqBA2_08aIWELnhDQ0j0Y_yDQjMoAZL2mk6yD9X_KQA/exec')">Take
+						me to the Chaos!</button>
+				</div>
+
+				<p><b>WARNING: </b>You will have to authenticate with your Google Account to use the Translation Chaos
+					Engine. To authenticate, hit "Review Permission" when prompted, then go to "Advanced" and </p>
+
+				<h2>Example output from the Translation Chaos Engine:</h2>
+				<p><b>Original Text:</b> On a quiet Tuesday afternoon, a small bakery on a cobblestone street discovered
+					that its ancient espresso machine had developed a peculiar habit: it would only work when someone
+					hummed old sea shanties nearby. At first, the barista thought it was a coincidence, but soon regular
+					customers began arriving not just for coffee, but to perform increasingly elaborate musical numbers
+					in exchange for cappuccinos. A retired librarian brought sheet music, a teenager brought a ukulele,
+					and a passing tourist insisted on tap-dancing every order. The bakery became strangely famous, not
+					for its pastries, but for the unexpected orchestra of everyday people trying to convince a stubborn
+					machine to wake up.</p>
+
+				<p>
+					<b>Translated Output:</b> At first, the staff was confused, but soon customers began to choose
+					cappuccinos with coffee and listen to modern music.
+
+					On a quiet Tuesday, a strange sound came from the old espresso machine in a small brick bakery on a
+					quiet street.
+
+					The customers were expecting coffee, not bread.
+
+					As the machine turned on, a beautiful woman in a swimsuit entered the shop.
+
+					While the customers listened to light music, she smiled and played the ukulele.
+
+					The bread was long.
+				</p>
+
+				<p>To submit a bug report, <a href="https://forms.gle/qp9ASx4y4Kf2WzZM6" target="_blank">click here</a>
+				</p>
+
+			</div>
+		</div>
+
+	</body>
 
 </html>
